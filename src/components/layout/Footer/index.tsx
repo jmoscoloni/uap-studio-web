@@ -47,7 +47,7 @@ const Footer = ({ className }: FooterProps) => {
               <span className="lg:hidden">
               © 2026 UAP Std. -{' '}
               <Link
-                href={'/legal' as any}
+                href={'/legal'}
                 className="relative inline-block transition-colors duration-200 hover:text-[#FB2721]"
               >
                 Legal &amp; Priv.
@@ -56,7 +56,7 @@ const Footer = ({ className }: FooterProps) => {
               <span className="hidden lg:inline">
               © 2026 UAP Studio -{' '}
               <Link
-                href={'/legal' as any}
+                href={'/legal'}
                 className="relative inline-block transition-colors duration-200 hover:text-[#FB2721]"
               >
                 legal & privacy

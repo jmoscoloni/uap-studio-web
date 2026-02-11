@@ -24,6 +24,11 @@ export const pathnames = {
     en: '/work/[slug]',
     es: '/trabajos/[slug]'
   }
+  ,
+  '/legal': {
+    en: '/legal',
+    es: '/legal'
+  }
 };
 
 export const routing = defineRouting({
