@@ -1,0 +1,58 @@
+{
+  "header": "Header english",
+  "menu": {
+    "work": "Trabajos",
+    "archive": "Archivo",
+    "about": "Acerca",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "title": {
+        "line1": "UNBUILT ARCHITECTURE",
+        "line2": "PHOTOGRAPHY STUDIO"
+      },
+      "paragraph": "Creamos visuales generados por computadora inspirados en la fotografía analógica"
+    },
+    "work": {
+      "title": "Work",
+      "button": "Ver todos los proyectos"
+    }
+  },
+  "about": {
+    "heroTitle": "Acerca de Nosotros"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "last": "Apellido",
+      "project": "Cuéntame sobre tu proyecto",
+      "sending": "Enviando",
+      "send": "Enviar mensaje"
+    }
+  },
+  "footer": {
+    "tel": "tel:",
+    "email": "email:",
+    "offices": "oficinas:"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español"
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist.",
+      "goHome": "Go to home"
+    },
+    "error": {
+      "title": "Error",
+      "description": "An error occurred.",
+      "tryAgain": "Try again",
+      "goHome": "Go to home"
+    }
+  }
+}

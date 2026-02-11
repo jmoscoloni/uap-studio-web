@@ -1,0 +1,59 @@
+{
+  "header": "Header english",
+  "menu": {
+    "work": "work",
+    "archive": "archive",
+    "about": "about",
+    "contact": "contact"
+  },
+  "home": {
+    "hero": {
+      "title": {
+        "line1": "UNBUILT ARCHITECTURE",
+        "line2": "PHOTOGRAPHY STUDIO"
+      },
+      "paragraph": "We make computer generated visuals inspired by analog photographers"
+    },
+    "work": {
+      "title": "Work",
+      "button": "See all projects"
+    }
+  },
+  "about": {
+    "heroTitle": "About Us",
+    "intro": "Uap is a visualization studio based in Buenos Aires and Alicante, founded in 2025 by architect Julian Moscoloni.\n\nOur research unfolds through different projects and conditions, and is currently informed by projects that listen to their surroundings, where space is shaped through a quiet exchange between interior and exterior, structure and landscape. Within this search, analog photography becomes part of it, with its softness, its grain, its way of holding light and time, intensifying the connection between what is built and what already exists.\n\nFrom there, we continue an exploration that weaves together photography and rendering, using emerging tools not as an end, but as a medium to translate atmosphere, materiality, and presence into new forms of architectural imagery."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "First Name",
+      "email": "Email",
+      "last": "Last Name",
+      "project": "Tell me about your project",
+      "sending": "Sending",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "tel": "tel:",
+    "email": "email:",
+    "offices": "offices:"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Español"
+  },
+  "errorPages": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist.",
+      "goHome": "Go to home"
+    },
+    "error": {
+      "title": "Error",
+      "description": "An error occurred.",
+      "tryAgain": "Try again",
+      "goHome": "Go to home"
+    }
+  }
+}
