@@ -44,19 +44,19 @@ const Footer = ({ className }: FooterProps) => {
         </nav>
         <div className="mt-2 flex w-full items-center justify-end lg:mt-0 lg:w-auto lg:justify-start">
           <p className="text-right text-[1.125rem] whitespace-nowrap lg:text-left lg:text-2xl">
-            <span className="lg:hidden">
+              <span className="lg:hidden">
               © 2026 UAP Std. -{' '}
               <Link
-                href={'/legal'}
+                href={'/legal' as any}
                 className="relative inline-block transition-colors duration-200 hover:text-[#FB2721]"
               >
                 Legal &amp; Priv.
               </Link>
             </span>
-            <span className="hidden lg:inline">
+              <span className="hidden lg:inline">
               © 2026 UAP Studio -{' '}
               <Link
-                href={'/legal'}
+                href={'/legal' as any}
                 className="relative inline-block transition-colors duration-200 hover:text-[#FB2721]"
               >
                 legal & privacy
@@ -86,7 +86,7 @@ const Footer = ({ className }: FooterProps) => {
             </a>
           </p>
         </div>
-        <p className="hidden text-[1rem] lg:block lg:text-2xl">
+          <p className="hidden text-[1rem] lg:block lg:text-2xl">
           <span className="opacity-70 lg:mr-1">{t('footer.email')}</span>
           <a href="mailto:info@uap-studio.com" className="hover:text-[#FB2721]">
             info@uap-studio.com
