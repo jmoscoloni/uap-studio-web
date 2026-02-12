@@ -16,6 +16,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ big, image, paragraph, title, subtitle, video }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [showVideo, setShowVideo] = useState(false);
+  const [isLandscape, setIsLandscape] = useState<boolean | null>(null);
 
   useEffect(() => {
     const check = () => setShowVideo(window.innerWidth >= 1024);
@@ -50,13 +51,10 @@ const Card: React.FC<CardProps> = ({ big, image, paragraph, title, subtitle, vid
         '': big
       })}
     >
-      <div
-        onMouseEnter={handleEnter}
-        onMouseLeave={handleLeave}
-        className={cn('relative aspect-[1/1.2] w-full overflow-hidden', {
-          'lg:aspect-auto lg:h-[calc(100dvh-30px)]': big
-        })}
-      >
+      <div onMouseEnter={handleEnter} onMouseLeave={handleLeave} className={cn('relative w-full overflow-hidden', {
+        'aspect-[1/1.2]': isLandscape !== true,
+        'lg:aspect-auto lg:h-[calc(100dvh-30px)]': big
+      })}>
         <Image
           src={image}
           alt=""
@@ -64,7 +62,11 @@ const Card: React.FC<CardProps> = ({ big, image, paragraph, title, subtitle, vid
           height={619}
           quality={100}
           sizes="(min-width:1024px) 50vw, 100vw"
-          className="h-full w-full object-cover duration-700 ease-out group-hover/card:scale-[1.05]"
+          onLoadingComplete={(img) => setIsLandscape(img.naturalWidth > img.naturalHeight)}
+          className={cn('duration-700 ease-out group-hover/card:scale-[1.05] lg:h-full lg:w-full lg:object-cover', {
+            'w-full h-auto object-contain': isLandscape === true && !big,
+            'w-full h-full object-cover': isLandscape !== true
+          })}
         />
         {video && showVideo && (
           <video
