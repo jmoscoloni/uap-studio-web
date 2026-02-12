@@ -2,6 +2,7 @@ import cn from 'classnames';
 import Loader from '@/components/layout/Loader';
 import Header from '@/components/layout/Header';
 import Menu from '@/components/layout/Menu';
+import StripQueryParams from '@/components/layout/StripQueryParams';
 import SmoothScroll from '@/components/layout/SmoothScroll';
 import Footer from '@/components/layout/Footer';
 import ScrollTrigger from '@/components/layout/ScrollTrigger';
@@ -71,6 +72,7 @@ export default async function Layout({ children, params }: LayoutProps) {
 
       <div lang={locale} className={cn(IBMMonoPlex.variable)}>
         <NextIntlClientProvider>
+          <StripQueryParams />
           <Loader />
           <Header />
           <Menu />
