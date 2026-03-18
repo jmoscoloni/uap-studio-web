@@ -25,6 +25,13 @@ export default async function TestPage({ params }: LocaleWithUidPageProps) {
   // const article = mockArticle[uid];
 
   // if (!article) {
+    {
+      slug: 'hsp-house',
+      title: 'HSP House',
+      subtitle: 'E2M architects',
+      overview: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
+      images: ['/Images/HSP HOUSE - YARD.jpg']
+    }
   //   notFound();
   // }
 
