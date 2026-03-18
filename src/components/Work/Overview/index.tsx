@@ -40,9 +40,9 @@ const projects = [
   },
   {
     id: 6,
-    image: '/Images/HSP HOUSE - YARD.jpg',
+    image: '/Images/HSP HOUSE.jpg',
     title: 'HSP House',
-    route: 'hsp-house-2',
+    route: 'hsp-house',
     paragraph: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
     subtitle: 'E2M architects',
     slug: 'nicola-copy-3'
