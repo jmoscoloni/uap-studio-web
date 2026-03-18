@@ -85,12 +85,12 @@ const Overview = () => {
   return (
     <section className="relative w-full px-2 pt-5 pb-6 lg:px-4 lg:pb-10">
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">
-        {projects
+            {projects
           .filter(
             (project, index, self) => self.findIndex((p) => p.slug === project.slug) === index
           )
           .map((project) => {
-            const routeSlug = project.title ? slugify(project.title) : project.slug;
+            const routeSlug = project.slug ? project.slug : project.title ? slugify(project.title) : '';
             return (
               <Link
                 key={project.id}
