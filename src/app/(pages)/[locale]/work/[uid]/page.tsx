@@ -49,11 +49,11 @@ export default async function TestPage({ params }: LocaleWithUidPageProps) {
     },
     {
       slug: 'naples-st-house-copy',
-      title: 'NA House',
+      title: 'HSP House',
       subtitle: 'E2M architects',
       overview:
         'A contemporary kitchen that combines clean lines, modern materials, and functional design.',
-      images: ['/Images/NA HOUSE.jpg']
+      images: ['/Images/HSP HOUSE - YARD.jpg']
     },
     {
       slug: 'nicola-copy',

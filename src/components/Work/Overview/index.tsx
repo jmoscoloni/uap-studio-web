@@ -49,8 +49,8 @@ const projects = [
   },
   {
     id: 3,
-    image: '/Images/NA HOUSE.jpg',
-    title: 'NA House',
+    image: '/Images/HSP HOUSE - YARD.jpg',
+    title: 'HSP House',
     paragraph:
       'A contemporary kitchen that combines clean lines, modern materials, and functional design.',
     subtitle: 'E2M architects',
