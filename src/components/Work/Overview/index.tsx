@@ -51,6 +51,7 @@ const projects = [
     id: 3,
     image: '/Images/HSP HOUSE - YARD.jpg',
     title: 'HSP House',
+    route: 'hsp-house-2',
     paragraph:
       'A contemporary kitchen that combines clean lines, modern materials, and functional design.',
     subtitle: 'E2M architects',
@@ -90,7 +91,7 @@ const Overview = () => {
             (project, index, self) => self.findIndex((p) => p.slug === project.slug) === index
           )
           .map((project) => {
-            const routeSlug = project.title ? slugify(project.title) : project.slug;
+            const routeSlug = project.route ? project.route : project.title ? slugify(project.title) : project.slug;
             return (
               <Link
                 key={project.id}

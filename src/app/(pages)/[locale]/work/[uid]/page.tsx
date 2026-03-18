@@ -78,6 +78,14 @@ export default async function TestPage({ params }: LocaleWithUidPageProps) {
       overview: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
       images: ['/Images/HSP HOUSE.jpg']
     }
+    ,
+    {
+      slug: 'hsp-house-2',
+      title: 'HSP House',
+      subtitle: 'E2M architects',
+      overview: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
+      images: ['/Images/HSP HOUSE.jpg']
+    }
   ];
 
   const projects: Record<
