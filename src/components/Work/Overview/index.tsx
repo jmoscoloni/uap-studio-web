@@ -19,12 +19,13 @@ const projects = [
     video: '/videos/NAPLES ST HOUSE.mp4'
   },
   {
-    id: 6,
-    image: '/Images/HSP HOUSE.jpg',
-    title: 'HSP House',
-    paragraph: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
-    subtitle: 'E2M architects',
-    slug: 'nicola-copy-3'
+    id: 5,
+    image: '/Images/VILLA M.jpg',
+    title: 'Villa M',
+    paragraph:
+      '2/2 series. This project explores the intersection of architecture and digital art, creating a series of computer-generated visuals that reimagine spaces through a contemporary lens.',
+    subtitle: 'Leopold Banchini',
+    slug: 'nicola-copy-2'
     // video preview disabled on mobile/desktop per request
   },
   {
@@ -38,13 +39,13 @@ const projects = [
     video: '/videos/BRC - PPAL DORM.mp4'
   },
   {
-    id: 5,
-    image: '/Images/VILLA M.jpg',
-    title: 'Villa M',
-    paragraph:
-      '2/2 series. This project explores the intersection of architecture and digital art, creating a series of computer-generated visuals that reimagine spaces through a contemporary lens.',
-    subtitle: 'Leopold Banchini',
-    slug: 'nicola-copy-2'
+    id: 6,
+    image: '/Images/HSP HOUSE - YARD.jpg',
+    title: 'HSP House',
+    route: 'hsp-house-2',
+    paragraph: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
+    subtitle: 'E2M architects',
+    slug: 'nicola-copy-3'
     // video preview disabled on mobile/desktop per request
   },
   {
