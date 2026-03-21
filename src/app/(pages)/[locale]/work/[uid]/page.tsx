@@ -30,7 +30,7 @@ export default async function TestPage({ params }: LocaleWithUidPageProps) {
       title: 'HSP House',
       subtitle: 'E2M architects',
       overview: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
-      images: ['/Images/HSP HOUSE.jpg']
+      images: ['/Images/HSP HOUSE - ACCESS FACADE.jpg']
     }
   //   notFound();
   // }
@@ -60,7 +60,7 @@ export default async function TestPage({ params }: LocaleWithUidPageProps) {
       subtitle: 'E2M architects',
       overview:
         'A contemporary kitchen that combines clean lines, modern materials, and functional design.',
-      images: ['/Images/HSP HOUSE.jpg']
+      images: ['/Images/HSP HOUSE - ACCESS FACADE.jpg']
     },
     {
       slug: 'nicola-copy',
@@ -83,7 +83,7 @@ export default async function TestPage({ params }: LocaleWithUidPageProps) {
       title: 'HSP House',
       subtitle: 'E2M architects',
       overview: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
-      images: ['/Images/HSP HOUSE.jpg']
+      images: ['/Images/HSP HOUSE - ACCESS FACADE.jpg']
     }
     ,
     {
@@ -91,7 +91,7 @@ export default async function TestPage({ params }: LocaleWithUidPageProps) {
       title: 'HSP House',
       subtitle: 'E2M architects',
       overview: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
-      images: ['/Images/HSP HOUSE.jpg']
+      images: ['/Images/HSP HOUSE - ACCESS FACADE.jpg']
     }
   ];
 
