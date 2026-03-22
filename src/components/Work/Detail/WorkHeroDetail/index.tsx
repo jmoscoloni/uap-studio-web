@@ -67,31 +67,7 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
             </div>
 
             <div className="order-1 flex items-stretch lg:order-2 lg:col-span-8">
-              <div className="relative flex items-stretch">
-                {hasMultiple && selectedIndex > 0 && (
-                  <button
-                      onClick={scrollPrev}
-                      className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721]"
-                      aria-label="Previous slide"
-                    >
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15 18L9 12L15 6"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                )}
-
+              <div className="relative w-full">
                 <div className="flex-1 overflow-hidden" ref={emblaRef}>
                   <div className="flex">
                     {images.map((src, index) => (
@@ -109,15 +85,41 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                   </div>
                 </div>
 
+                {/* Prev button: absolutely positioned so it doesn't affect layout */}
+                {hasMultiple && selectedIndex > 0 && (
+                  <button
+                    onClick={scrollPrev}
+                    className="absolute z-20 left-2 top-1/2 -translate-y-1/2 flex items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721] lg:left-4"
+                    aria-label="Previous slide"
+                  >
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 18L9 12L15 6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                )}
+
+                {/* Next button: absolutely positioned so it doesn't affect layout */}
                 {hasMultiple && selectedIndex < images.length - 1 && (
                   <button
-                      onClick={scrollNext}
-                      className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721]"
-                      aria-label="Next slide"
-                    >
+                    onClick={scrollNext}
+                    className="absolute z-20 right-2 top-1/2 -translate-y-1/2 flex items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721] lg:right-4"
+                    aria-label="Next slide"
+                  >
                     <svg
-                      width="24"
-                      height="24"
+                      width="28"
+                      height="28"
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -133,8 +135,6 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                   </button>
                 )}
               </div>
-
-              {/* Indicators removed per design — only prev/next buttons shown */}
             </div>
           </div>
         </div>
