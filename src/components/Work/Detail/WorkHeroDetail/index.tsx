@@ -97,16 +97,12 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                     {images.map((src, index) => (
                       <div
                         key={index}
-                        className="flex min-w-0 flex-[0_0_100%] items-center justify-center px-0 py-0 lg:h-[calc(100dvh-24px)] lg:px-2 lg:py-2"
+                        className="flex min-w-0 flex-[0_0_100%] items-center justify-center px-0 py-0 lg:px-2 lg:py-2"
                       >
                         <img
                           src={src}
                           alt={`${title} - Image ${index + 1}`}
-                          className={
-                            hasMultiple
-                              ? 'h-full w-full object-cover'
-                              : 'max-h-full max-w-full object-contain'
-                          }
+                          className="max-h-full max-w-full object-contain"
                         />
                       </div>
                     ))}
@@ -138,24 +134,7 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                 )}
               </div>
 
-              {hasMultiple && (
-                <div className="mt-6 flex justify-center gap-2">
-                  {images.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => emblaApi?.scrollTo(index)}
-                      className="relative h-[2px] w-6 cursor-pointer overflow-hidden bg-black/20"
-                      aria-label={`Go to slide ${index + 1}`}
-                    >
-                      <span
-                        className={`absolute inset-0 origin-left bg-black transition-transform duration-300 ${
-                          selectedIndex === index ? 'scale-x-100' : 'scale-x-0'
-                        }`}
-                      />
-                    </button>
-                  ))}
-                </div>
-              )}
+              {/* Indicators removed per design — only prev/next buttons shown */}
             </div>
           </div>
         </div>
