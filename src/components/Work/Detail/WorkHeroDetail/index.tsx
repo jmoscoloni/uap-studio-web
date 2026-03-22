@@ -97,7 +97,7 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                     {images.map((src, index) => (
                       <div
                         key={index}
-                        className="flex min-w-0 flex-[0_0_100%] items-center justify-center px-0 py-0 lg:px-2 lg:py-2"
+                        className="flex min-w-0 flex-[0_0_100%] items-center justify-center px-0 py-0 lg:h-[calc(100dvh-24px)] lg:px-2 lg:py-2"
                       >
                         <img
                           src={src}
