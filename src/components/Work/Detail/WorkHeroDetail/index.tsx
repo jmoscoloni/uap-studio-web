@@ -14,7 +14,7 @@ interface WorkHeroDetailProps {
 
 const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailProps) => {
   const router = useRouter();
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const scrollPrev = useCallback(() => {
@@ -68,7 +68,7 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
 
             <div className="order-1 flex items-stretch lg:order-2 lg:col-span-8">
               <div className="relative flex items-stretch">
-                {hasMultiple && (
+                {hasMultiple && selectedIndex > 0 && (
                   <button
                       onClick={scrollPrev}
                       className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721]"
@@ -109,7 +109,7 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                   </div>
                 </div>
 
-                {hasMultiple && (
+                {hasMultiple && selectedIndex < images.length - 1 && (
                   <button
                       onClick={scrollNext}
                       className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721]"
