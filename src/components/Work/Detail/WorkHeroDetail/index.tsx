@@ -89,7 +89,7 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                 {hasMultiple && selectedIndex > 0 && (
                   <button
                     onClick={scrollPrev}
-                    className="absolute z-20 left-6 top-1/2 -translate-y-1/2 flex items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721] lg:left-8"
+                    className="absolute z-20 -left-6 top-1/2 -translate-y-1/2 flex items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721] lg:-left-8"
                     aria-label="Previous slide"
                   >
                     <svg
@@ -114,7 +114,7 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
                 {hasMultiple && selectedIndex < images.length - 1 && (
                   <button
                     onClick={scrollNext}
-                    className="absolute z-20 right-6 top-1/2 -translate-y-1/2 flex items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721] lg:right-8"
+                    className="absolute z-20 -right-6 top-1/2 -translate-y-1/2 flex items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721] lg:-right-8"
                     aria-label="Next slide"
                   >
                     <svg
