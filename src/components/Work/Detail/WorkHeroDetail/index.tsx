@@ -70,10 +70,10 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
               <div className="relative flex items-stretch">
                 {hasMultiple && (
                   <button
-                    onClick={scrollPrev}
-                    className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60"
-                    aria-label="Previous slide"
-                  >
+                      onClick={scrollPrev}
+                      className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721]"
+                      aria-label="Previous slide"
+                    >
                     <svg
                       width="24"
                       height="24"
@@ -111,10 +111,10 @@ const WorkHeroDetail = ({ title, subtitle, overview, images }: WorkHeroDetailPro
 
                 {hasMultiple && (
                   <button
-                    onClick={scrollNext}
-                    className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60"
-                    aria-label="Next slide"
-                  >
+                      onClick={scrollNext}
+                      className="flex flex-shrink-0 cursor-pointer items-center justify-center px-2 transition-opacity hover:opacity-60 text-[#FB2721]"
+                      aria-label="Next slide"
+                    >
                     <svg
                       width="24"
                       height="24"

@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: 6,
-    image: '/Images/HSP HOUSE - Image 1.jpg',
+    image: '/Images/HSP HOUSE - YARD.jpg',
     title: 'HSP House',
     paragraph: 'A bold expression of raw concrete and geometry captured through virtual lenses.',
     subtitle: 'E2M architects',
