@@ -105,12 +105,12 @@ const Footer = ({ className }: FooterProps) => {
           </a>{' '}
           -{' '}
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Alicante+Spain"
+            href="https://www.google.com/maps/search/?api=1&query=Sidney+Australia"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#FB2721]"
           >
-            Alicante, Spain
+            Sidney, Australia
           </a>
         </p>
       </div>
